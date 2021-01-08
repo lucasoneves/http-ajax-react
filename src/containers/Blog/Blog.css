@@ -1,11 +1,4 @@
-.Posts {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 640px;
-    margin: auto;
-}
+
 
 .Blog ul {
     list-style: none;
