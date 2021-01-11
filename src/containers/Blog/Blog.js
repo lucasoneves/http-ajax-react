@@ -28,6 +28,7 @@ class Blog extends Component {
 				</header>
 				{/* <Route path="/" exact render={() => <h1>Home 1</h1>}></Route> */}
 				<Route path="/" exact component={Posts}></Route>
+				<Route path="/:id" component={NewPost}></Route>
 				<Route path="/new-post" component={NewPost}></Route>
 			</div>
 		);
