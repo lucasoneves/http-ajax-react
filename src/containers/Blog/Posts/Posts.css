@@ -5,4 +5,14 @@
   width: 100%;
   max-width: 640px;
   margin: auto;
+  color: black;
+}
+
+.Posts a {
+  width: 100%;
+  color: inherit;
+}
+
+.Posts a:hover {
+  color: initial;
 }
