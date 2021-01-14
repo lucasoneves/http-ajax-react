@@ -3,7 +3,6 @@ import axios from "../../../axios";
 import "./Posts.css";
 
 import Post from "../../../components/Post/Post";
-import { Link } from "react-router-dom";
 
 class Posts extends Component {
 	state = {
@@ -26,18 +25,19 @@ class Posts extends Component {
 	}
 
 	postSelected = (id) => {
-		// console.log(id);
+		this.props.history.push({pathname: '/' + id})
 	};
 	render() {
 		const posts = this.state.posts.map((post) => {
 			return (
-				<Link to={'/' + post.id} key={post.id}>
+				// <Link to={'/' + post.id} >
 					<Post
 						title={post.title}
+						key={post.id}
 						author={post.author}
 						clicked={() => this.postSelected(post.id)}
 					/>
-				</Link>
+				// </Link>
 			);
 		});
 		return (
